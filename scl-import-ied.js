@@ -1158,7 +1158,7 @@ Array(maxLnInst)
     .fill(1)
     .map((_, i) => `${i + 1}`);
 
-await fetch(new URL("../foundation/nsd.json", import.meta.url)).then((res) => res.json());
+await fetch(new URL(new URL('assets/nsd-0a370a57.json', import.meta.url).href, import.meta.url)).then((res) => res.json());
 
 function newEditEvent(edit) {
     return new CustomEvent('oscd-edit', {
